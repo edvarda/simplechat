@@ -1,0 +1,40 @@
+/*#root {
+	width: 60%;
+	margin: 5% auto;
+}*/
+
+.footer-title {
+	height: 100% !important;
+	width: 15% !important;
+	padding: 1rem 1rem !important;
+}
+
+.footer-body {
+	height: 100% !important;
+	width: 100% !important;
+	padding: 1rem 1rem !important;
+}
+
+.message {
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+
+.sender {
+	text-align:right;
+	margin-bottom: auto;
+	margin-top: auto;
+	margin-left: 2rem;
+}
+
+.text {
+	margin-bottom: auto;
+	margin-top: auto;
+	margin-left: 1rem;
+}
+
+
+body {
+	background-color: whitesmoke;
+}
