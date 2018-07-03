@@ -1,7 +1,3 @@
-/*#root {
-	width: 60%;
-	margin: 5% auto;
-}*/
 
 .footer-title {
 	height: 100% !important;
@@ -16,9 +12,13 @@
 }
 
 .message {
-	margin-bottom: 1rem;
-	margin-top: 1rem;
-	margin-left: 1rem;
+	margin-bottom: 0.2rem;
+	background-color: white;
+}
+
+.messages {
+	list-style: none;
+	padding: 1rem;
 }
 
 .sender {
@@ -34,6 +34,24 @@
 	margin-left: 1rem;
 }
 
+.chatroom {
+	background: gainsboro;
+}
+
+.statusbar {
+	width: 100% !important;
+	height: 4rem !important;
+	padding: 1rem;
+	text-align: right;
+	font-size: larger;
+	font-weight: bold;
+	background: lightsalmon;
+	margin-top: 1rem;
+}
+
+.inputcard {
+	background: mistyrose;
+}
 
 body {
 	background-color: whitesmoke;

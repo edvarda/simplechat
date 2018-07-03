@@ -1,4 +1,4 @@
-import { FETCH_MESSAGES } from '../actions/postActions';
+import { FETCH_MESSAGES } from '../actions/messageActions';
 
 export default function (state = {}, action) {
 	switch(action.type) {
