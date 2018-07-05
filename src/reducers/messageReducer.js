@@ -1,4 +1,4 @@
-import { FETCH_MESSAGES, INCREASE_HISTORY } from '../actions/messageActions';
+import { FETCH_MESSAGES } from '../actions/messageActions';
 
 const initialState = {
 	historySize: 15

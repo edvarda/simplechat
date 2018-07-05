@@ -17,13 +17,10 @@ export default function (state = {}, action) {
 					displayName: action.payload.displayName,
 					photoURL: action.payload.photoURL,
 					uid: action.payload.uid,
-
 				};
-				console.log(state);
 				return(state);
 			} else {
 				const state = {...initialState};
-				console.log(state);
 				return(state);
 			}
 		default:

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Field, reduxForm, reset } from 'redux-form';
 import Inputcard from './Inputcard'
 import Chatroom from './Chatroom'
 import Statusbar from './Statusbar'
@@ -16,7 +15,6 @@ class App extends Component {
 
   //Lifecycle method
   render() {
-    const { handleSubmit } = this.props;
     return (
       <AppWrapper>
         <Statusbar />

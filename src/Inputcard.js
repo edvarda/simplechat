@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { Field, reduxForm, reset } from 'redux-form';
 import { saveMessage } from './actions/messageActions'; //TODO change name
-import { Input, Button, Container} from 'rebass';
+import { Input, ButtonOutline, Container} from 'rebass';
 
 
 const StyledForm = styled.form`
@@ -11,8 +11,10 @@ const StyledForm = styled.form`
 	grid-template-columns: 4fr 1fr;
 `;
 
-const StyledSendButton = styled(Button)`
-	border: 2px solid ${props => props.theme.colors.bubbles};
+const StyledSendButton = styled(ButtonOutline)`
+  	&:hover {
+    	color: ${props => props.theme.colors.englishgreen};
+  	}
 `;
 
 class Inputcard extends Component {
@@ -42,14 +44,14 @@ class Inputcard extends Component {
   render() {
     const { handleSubmit } = this.props;
     return(
-    	<Container bg='englishgreen' px={3} py={3}>
+    	<Container bg='darkspring' px={3} py={3}>
           <StyledForm onSubmit={handleSubmit(this.sendMessage.bind(this))}>
             <Field
               name="text"
               component={this.renderField}
               loggedIn={this.props.loggedIn}
             />
-        	<StyledSendButton bg="darkspring" ml={2} type="submit" disabled={!this.props.loggedIn}>Send</StyledSendButton>
+        	<StyledSendButton ml={2} type="submit" disabled={!this.props.loggedIn}>Send</StyledSendButton>
           </StyledForm>
         </Container>
     );

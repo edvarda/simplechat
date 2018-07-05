@@ -65,11 +65,6 @@ function IncreaseHistory(props) {
 class Chatroom extends Component {
 
   //Lifecycle method
-  constructor(props) {
-    super(props);
-  }
-
-  //Lifecycle method
   componentWillMount() {
     this.props.getMessages(this.props.historySize);
   }

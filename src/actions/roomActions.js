@@ -1,5 +1,3 @@
-import { database } from '../firebase';
-
 export const INCREASE_HISTORY = 'increase_history';
 
 export function increaseHistoryLength(value) {
