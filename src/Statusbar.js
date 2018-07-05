@@ -21,7 +21,11 @@ const StyledUserInfo = styled(Box)`
   padding-right: 1rem;
   border: 2px solid ${props => props.theme.colors.bubbles};
   border-radius: 4px;
-  & > img {border-right: 2px solid ${props => props.theme.colors.bubbles}}
+  & > img { 
+    border-right: 2px solid ${props => props.theme.colors.bubbles}
+    max-width: 64px;
+    max-height: 64px;
+  }
 `;
 
 
