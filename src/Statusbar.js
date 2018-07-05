@@ -14,14 +14,15 @@ const StyledStatusbar = styled(Container)`
 `;
 
 const StyledUserInfo = styled(Box)`
-  align-self: stretch;
   display: grid;
   column-gap 1rem;
   grid-template-columns: auto auto;
   align-items: center;
-  padding: 1rem;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+  padding-right: 1rem;
   & > img {
-
+    border: 3px solid ${props => props.theme.colors.bubbles};
+    border-radius: 2px;
   }
 `;
 
@@ -56,7 +57,7 @@ class Statusbar extends Component {
 
 function UserInfo(props) {
   return(
-    <StyledUserInfo>
+    <StyledUserInfo bg="darkbubbles">
       <img src={props.avatar}/>
       <span>{props.name}</span>
     </StyledUserInfo>

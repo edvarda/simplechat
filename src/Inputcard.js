@@ -16,6 +16,7 @@ const StyledSendButton = styled(Button)`
 `;
 
 class Inputcard extends Component {
+
   //Custom
   sendMessage(values) {
   	if (values) {
@@ -37,7 +38,7 @@ class Inputcard extends Component {
 	}
   }
 
-  
+  //Lifecycle method
   render() {
     const { handleSubmit } = this.props;
     return(

@@ -6,9 +6,6 @@ import { getMessages } from './actions/messageActions';
 import { increaseHistoryLength } from './actions/roomActions';
 import { Container, Box } from 'rebass';
 
-const StyledChatroom = styled(Container)`
-`;
-
 const StyledMessageListWrapper = styled.div`
    height: 500px;
    overflow: auto;
@@ -104,14 +101,14 @@ class Chatroom extends Component {
   //Lifecycle method
   render() {
     return(
-      <StyledChatroom bg="bubbles" px={2} py={2}>
+      <Container bg="bubbles" px={2} py={2}>
         <IncreaseHistory increaseHistory={this.props.increaseHistoryLength.bind(this, (this.props.historySize + 15) )}/>
         <StyledMessageListWrapper>
           <StyledMessageList>
             {this.renderMessages()}
           </StyledMessageList>
         </StyledMessageListWrapper>
-      </StyledChatroom>
+      </Container>
     );
   }
 }

@@ -13,8 +13,6 @@ import bg from './background.jpg';
 
 const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk)));
 
-
-
 injectGlobal`
   * { box-sizing: border-box; }
   body { 
